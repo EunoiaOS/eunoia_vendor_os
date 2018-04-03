@@ -9,7 +9,8 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.eunoia.version=$(EUNOIA_VERSION) \
     ro.eunoia.releasetype=$(EUNOIA_BUILDTYPE) \
     ro.eunoia.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.eunoia.codename=$(EUNOIA_CODENAME)
+    ro.eunoia.codename=$(EUNOIA_CODENAME) \
+    ro.eunoia.maintainer=$(EUNOIA_MAINTAINER)
 
 # EunoiaOS Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
