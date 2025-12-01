@@ -1,7 +1,7 @@
-# Inherit mobile full common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile_full.mk)
+# Inherit mobile full common Eunoia stuff
+$(call inherit-product, vendor/os/config/common_mobile_full.mk)
 
-# Inherit tablet common Lineage stuff
-$(call inherit-product, vendor/lineage/config/tablet.mk)
+# Inherit tablet common Eunoia stuff
+$(call inherit-product, vendor/os/config/tablet.mk)
 
-$(call inherit-product, vendor/lineage/config/wifionly.mk)
+$(call inherit-product, vendor/os/config/wifionly.mk)

@@ -16,14 +16,14 @@
 # -----------------------------------------------------------------
 # Lineage OTA update package
 
-LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(LINEAGE_VERSION).zip
+EUNOIA_TARGET_PACKAGE := $(PRODUCT_OUT)/eunoia-$(shell echo '$(EUNOIA_ZIP_VERSION)' | tr '[:upper:]' '[:lower:]').zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
-$(LINEAGE_TARGET_PACKAGE): $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LINEAGE_TARGET_PACKAGE)
-	$(hide) $(SHA256) $(LINEAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LINEAGE_TARGET_PACKAGE).sha256sum
-	@echo "Package Complete: $(LINEAGE_TARGET_PACKAGE)" >&2
+$(EUNOIA_TARGET_PACKAGE): $(INTERNAL_OTA_PACKAGE_TARGET)
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(EUNOIA_TARGET_PACKAGE)
+	$(hide) $(SHA256) $(EUNOIA_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(EUNOIA_TARGET_PACKAGE).sha256sum
+	@echo "Package Complete: $(EUNOIA_TARGET_PACKAGE)" >&2
 
-.PHONY: bacon
-bacon: $(LINEAGE_TARGET_PACKAGE) $(DEFAULT_GOAL)
+.PHONY: harvest
+harvest: $(EUNOIA_TARGET_PACKAGE) $(DEFAULT_GOAL)

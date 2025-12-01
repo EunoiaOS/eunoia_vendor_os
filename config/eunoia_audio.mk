@@ -1,10 +1,10 @@
 #
-# Lineage Audio Files
+# Eunoia Audio Files
 #
 
-ALARM_PATH := vendor/lineage/prebuilt/common/media/audio/alarms
-NOTIFICATION_PATH := vendor/lineage/prebuilt/common/media/audio/notifications
-RINGTONE_PATH := vendor/lineage/prebuilt/common/media/audio/ringtones
+ALARM_PATH := vendor/os/prebuilt/common/media/audio/alarms
+NOTIFICATION_PATH := vendor/os/prebuilt/common/media/audio/notifications
+RINGTONE_PATH := vendor/os/prebuilt/common/media/audio/ringtones
 
 # Alarms
 PRODUCT_COPY_FILES += \

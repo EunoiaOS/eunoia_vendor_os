@@ -1,5 +1,5 @@
-# Inherit common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit common Eunoia stuff
+$(call inherit-product, vendor/os/config/common.mk)
 
-# Inherit Lineage car device tree
-$(call inherit-product, device/lineage/car/lineage_car.mk)
+# Inherit Eunoia car device tree
+$(call inherit-product, device/eunoia/car/eunoia_car.mk)

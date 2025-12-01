@@ -1,5 +1,5 @@
-# Inherit common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile.mk)
+# Inherit common Eunoia stuff
+$(call inherit-product, vendor/os/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
@@ -36,6 +36,6 @@ PRODUCT_PACKAGES += \
     FontLatoOverlay \
     FontRubikOverlay
 
-# Include Lineage LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/dictionaries
+# Include Eunoia LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/os/overlay/dictionaries
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/os/overlay/dictionaries
