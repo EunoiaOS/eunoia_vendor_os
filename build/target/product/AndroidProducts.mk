@@ -15,9 +15,11 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/eunoia_dipper.mk \
     $(LOCAL_DIR)/eunoia_rosy.mk \
     $(LOCAL_DIR)/eunoia_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
+    eunoia_dipper-userdebug \
     eunoia_rosy-userdebug \
     eunoia_X00TD-userdebug
