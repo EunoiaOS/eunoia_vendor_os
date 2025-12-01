@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # Lineage OTA update package
 
-EUNOIA_TARGET_PACKAGE := $(PRODUCT_OUT)/eunoia-$(shell echo '$(EUNOIA_ZIP_VERSION)' | tr '[:upper:]' '[:lower:]').zip
+EUNOIA_TARGET_PACKAGE := $(PRODUCT_OUT)/eunoia-$(EUNOIA_ZIP_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
