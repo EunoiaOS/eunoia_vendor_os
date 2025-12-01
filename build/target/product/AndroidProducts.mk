@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
-#PRODUCT_MAKEFILES := \
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/eunoia_X00TD.mk
 
-#COMMON_LUNCH_CHOICES := \
+COMMON_LUNCH_CHOICES := \
+    eunoia_X00TD-userdebug
