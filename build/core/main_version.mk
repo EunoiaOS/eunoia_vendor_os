@@ -9,8 +9,7 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.eunoia.version=$(EUNOIA_VERSION) \
     ro.eunoia.releasetype=$(EUNOIA_BUILDTYPE) \
     ro.eunoia.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(EUNOIA_VERSION) \
-    ro.eunoialegal.url=https://lineageos.org/legal
+    ro.eunoia.codename=$(EUNOIA_CODENAME)
 
 # EunoiaOS Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
