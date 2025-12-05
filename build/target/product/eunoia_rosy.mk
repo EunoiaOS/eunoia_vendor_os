@@ -24,6 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit some common EunoiaOS stuff
 $(call inherit-product, vendor/os/config/common_full_phone.mk)
 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Inherit from rosy device
 $(call inherit-product, device/xiaomi/rosy/device.mk)
 
