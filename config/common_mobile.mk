@@ -21,20 +21,20 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStepGo
+    EunoiaHomeQuickStepGo
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStepGo
+    EunoiaHomeQuickStepGo
 else
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStep
+    EunoiaHomeQuickStep
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStep
+    EunoiaHomeQuickStep
 endif
 
 PRODUCT_PACKAGES += \
-    TrebuchetOverlay
+    EunoiaHomeOverlay
 
 # Charger
 PRODUCT_PACKAGES += \
