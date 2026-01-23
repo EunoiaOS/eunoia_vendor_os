@@ -24,6 +24,21 @@ $(EUNOIA_TARGET_PACKAGE): $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(EUNOIA_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(EUNOIA_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(EUNOIA_TARGET_PACKAGE).sha256sum
 	@echo "Package Complete: $(EUNOIA_TARGET_PACKAGE)" >&2
+	@echo -e ""
+	@echo -e "================================================================================================"
+	@echo -e ""
+	@echo -e "                                ░█▀▀░█░█░█▀█░█▀█░▀█▀░█▀█░█▀█░█▀▀"
+	@echo -e "                                ░█▀▀░█░█░█░█░█░█░░█░░█▀█░█░█░▀▀█"
+	@echo -e "                                ░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀"
+	@echo -e ""
+	@echo -e "------------------------------------------------------------------------------------------------"
+	@echo -e ""
+	@echo -e "EunoiaOS ready to harvest!"
+	@echo -e ""
+	@echo -e "Packages zip	: "$(EUNOIA_TARGET_PACKAGE)
+	@echo -e "Packages size	: `du -h $(EUNOIA_TARGET_PACKAGE) | cut -f 1`"
+	@echo -e "================================================================================================"
+	@echo -e ""
 
 .PHONY: harvest
 harvest: $(EUNOIA_TARGET_PACKAGE) $(DEFAULT_GOAL)
